@@ -1,8 +1,23 @@
-<app-navbar></app-navbar>
-<h1>app.component</h1>
+<app-navbar [inputNavBar]="enviandoDadoDaAppComponenteParaNavbar" (newItemEvent)="addItem($event)"></app-navbar>
 
-<!-- <router-outlet>
+<div class="container-app-component">
+    <small>app.component</small>
+    
+    {{enviandoDadoDaAppComponenteParaNavbar}}
+    
+    <!-- <router-outlet>
+    </router-outlet> -->
+    
+    <ul class="lista">
+        <li *ngFor="let item of items">{{item}} <button  mat-icon-button matTooltip="Warn" color="warn"  (click)="clearOneItem(item)"id="btndeleteonly"><mat-icon>delete_outline</mat-icon></button></li>
+        
+    </ul>
 
-</router-outlet> -->
+
+    <!-- <div *ngFor="let itemApi of itemsApi">{{ itemApi.name}}</div> -->
+    
+    <button type="button" mat-raised-button (click)="clearItem()" id="btnlimpar"><mat-icon>delete_forever</mat-icon> Limpar</button>
+</div>
+
 
 <app-footer></app-footer>

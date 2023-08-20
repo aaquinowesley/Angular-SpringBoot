@@ -1,0 +1,27 @@
+.container{
+    background-color: lightblue;
+    font-weight: bolder;
+}
+
+h2{
+    text-align: center;
+}
+
+.crud{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem;
+}
+
+mat-icon{
+    color: greenyellow;
+}
+
+small{
+    display: block;
+    text-align: start;
+    opacity: 50%;
+}

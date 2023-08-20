@@ -1,2 +1,12 @@
-<h1>navbar.component</h1>
-<!-- {{meuinput}} -->
+<div class="container">
+    <small>navbar.component</small>
+    
+    <!-- {{meuinput}} -->
+    
+    <h2>Crud</h2>
+    <div class="crud">
+        <label for="item-input">Adicionar um Novo Item:</label>
+        <input type="text" id="item-input" #newItem>
+        <button type="button" mat-raised-button color="primary" (click)="addNewItem(newItem.value)"><mat-icon>add</mat-icon> Adicionar</button>
+    </div>
+</div>

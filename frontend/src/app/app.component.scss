@@ -1,0 +1,30 @@
+.container-app-component{
+    // padding: 16.1vw;
+    background-color: lemonchiffon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    // text-align: center;
+}
+
+small{
+    display: block;
+    text-align: end;
+    opacity: 50%;
+}
+
+// .lista{
+//     text-align: center;
+// }
+
+
+
+// #btndeleteonly{
+        
+// }
+
+#btnlimpar mat-icon{
+    color: red;
+}
